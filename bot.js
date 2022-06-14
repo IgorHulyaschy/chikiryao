@@ -1,6 +1,4 @@
 const TelegramApi = require('node-telegram-bot-api')
-const amqplib = require('amqplib')
-require('dotenv').config()
 
 // const bot1 = new TelegramApi(process.env.TELEGRAM_BOT1, { polling: true })
 
