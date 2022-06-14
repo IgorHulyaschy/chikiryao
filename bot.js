@@ -4,7 +4,7 @@ require('dotenv').config()
 
 // const bot1 = new TelegramApi(process.env.TELEGRAM_BOT1, { polling: true })
 
-const bot2 = new TelegramApi(process.env.TELEGRAM_BOT2, { polling: true })
+const bot2 = new TelegramApi('5386093998:AAGExW2U0KRia3HpdQIav496ZA-ncEIouDQ', { polling: true })
 
 // const connectToRabbit = async  () => { 
 //   const queue = 'queue'
