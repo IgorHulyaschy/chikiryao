@@ -13,7 +13,7 @@ const bot2 = new TelegramApi('5386093998:AAGExW2U0KRia3HpdQIav496ZA-ncEIouDQ', {
 //   return { sender, receiver }
 // }
 
-bot2.onText(/\/Tazasho/, async (msg) => {
+bot2.onText(/\/Tazasho)/, async (msg) => {
   const chatId = msg.chat.id
   await bot2.sendPhoto(chatId, 'https://static3.tgstat.ru/channels/_0/f2/f2bfb93b7b7df8f8c16ac1ceaabe428d.jpg')
 })
