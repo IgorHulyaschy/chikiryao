@@ -4,7 +4,7 @@ pipeline {
         stage('Preparing for build') {
             steps {
                 script {
-                    def isContainerExists = sh(script: "docker-compose ps -q -f name='bot1_bots_1-bots'", returnStdout: true) != ""
+                    def isContainerExists = sh(script: "docker-compose ps -q -f name='bot1_bots_1'", returnStdout: true) != ""
                     def isImageExists = sh(script: "docker-compose images -q bot1_bots_1", returnStdout: true) != ""
 
                     echo "${isContainerExists}"
