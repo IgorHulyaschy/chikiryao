@@ -1,0 +1,19 @@
+version: '3'
+services:
+  rabbit:
+    image: rabbitmq:3
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  bots:
+    image: telegram-bots
+    build: ./
+    user: 'root:root'
+    ports:
+      - 3001:3001
+    depends_on:
+      - rabbit
+    environment:
+      - TELEGRAM_BOT1=5568182086:AAFntooWzl89wa2UkarhVi8QXMQTZ7R-33Q
+      - TELEGRAM_BOT2=5386093998:AAGExW2U0KRia3HpdQIav496ZA-ncEIouDQ
+      - AMQP_URL=amqp://rabbit
