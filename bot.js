@@ -15,7 +15,7 @@ const bot2 = new TelegramApi('5386093998:AAGExW2U0KRia3HpdQIav496ZA-ncEIouDQ', {
 
 bot2.onText(/\/Tazasho/, async (msg) => {
   const chatId = msg.chat.id
-  await bot2.sendPhoto(chatId, 'https://static3.tgstat.ru/channels/_0/f2/f2bfb93b7b7df8f8c16ac1ceaabe428d.jpg')
+  await bot2.sendPhoto(chatId, 'http://risovach.ru/upload/2013/12/mem/natalya-morskaya-pehota_38147160_big_.jpeg')
 })
 
 // bot1.onText(/\Стартуем/, async (msg) => {
